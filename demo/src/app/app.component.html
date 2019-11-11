@@ -1,3 +1,11 @@
-<input [(ngModel)]="nome" name="">
+<div *ngIf="mostraTitulo; then thenBlock; else elseBlock">
 
-{{nome}}
+</div>
+
+<ng-template #thenBlock>
+    <h1>exemplo</h1>
+</ng-template>
+
+<ng-template #elseBlock>
+    <h1>outro exemplo</h1>
+</ng-template>
