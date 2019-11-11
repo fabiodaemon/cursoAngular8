@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { FuncionarioListaComponent } from './funcionario-lista/funcionario-lista.component';
@@ -13,7 +14,8 @@ import { FuncionarioService } from './funcionario.service';
     FuncionarioDetalheComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [FuncionarioService],
   bootstrap: [AppComponent]
