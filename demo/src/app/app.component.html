@@ -1,5 +1,9 @@
-<div [ngSwitch]="color">
-    <div *ngSwitchCase="'vermelho'">escolhido o vermelho</div>
-    <div *ngSwitchCase="'azul'">azul escolhido</div>
-    <div *ngSwitchDefault>output2</div>
-</div>
+<h2>{{nome | lowercase}}</h2>
+<h2>{{nome2 | titlecase}}</h2>
+<h2>{{nome2 | slice: 5}}</h2>
+<h2>{{nomes | json}}</h2>
+<h2>{{50 | percent}}</h2>
+<h2>{{50 | currency}}</h2>
+<h2>{{data | date:'shortDate'}}</h2>
+<h2>{{data | date:'shortTime'}}</h2>
+<h2>{{data | date:'short'}}</h2>

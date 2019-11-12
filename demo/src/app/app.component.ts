@@ -7,6 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  public color = "azul";
+  public nome = "CanalGeekDev";
+  public nome2 = "canalgeekdev";
+
+  public nomes = {
+    "userId": 1,
+    "id": 1,
+    "title": "delectus aut autem",
+    "completed": false
+  };
+
+  public data = new Date();
 
 }
