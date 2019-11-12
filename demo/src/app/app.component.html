@@ -1,3 +1,5 @@
-<ul *ngFor="let car of cars; odd as i">
-    <li>{{i}} - {{car}}</li>
-</ul>
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'vermelho'">escolhido o vermelho</div>
+    <div *ngSwitchCase="'azul'">azul escolhido</div>
+    <div *ngSwitchDefault>output2</div>
+</div>
