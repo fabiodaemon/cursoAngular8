@@ -7,6 +7,7 @@ import { FuncionarioComponent } from './funcionario/funcionario.component';
 import { DepartamentoComponent } from './departamento/departamento.component';
 import { HomeComponent } from './home/home.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { DepartamentoDetalheComponent } from './departamento-detalhe/departamento-detalhe.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     FuncionarioComponent,
     DepartamentoComponent,
     HomeComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    DepartamentoDetalheComponent
   ],
   imports: [
     BrowserModule,
