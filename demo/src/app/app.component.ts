@@ -5,18 +5,18 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
 
-  public nome = "CanalGeekDev";
-  public nome2 = "canalgeekdev";
+  public items = ['item1', 'item2', 'item3', 'item4'];
+  public tarefa = "";
 
-  public nomes = {
-    "userId": 1,
-    "id": 1,
-    "title": "delectus aut autem",
-    "completed": false
-  };
+  addTarefa(){
+    this.items.push(this.tarefa);
+  }
 
-  public data = new Date();
+  removeTarefa(item){
+    this.items.splice(this.items.indexOf(item), 1);
+  }
 
 }

@@ -1,0 +1,12 @@
+<ul>
+    <li *ngFor="let item of items">
+        {{item}}
+        <button (click)="removeTarefa(item)" >Remover</button>
+    </li>
+</ul>
+
+{{tarefa}}
+
+<input type="text" [(ngModel)]="tarefa" >
+<button (click)="addTarefa()" >Adicionar</button>
+<button (click)="removeTarefa(item)" >Remover</button>
