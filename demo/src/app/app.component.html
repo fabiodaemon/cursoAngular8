@@ -1,23 +1,6 @@
-<div>
-<div class="jumbotron">
-    <h1>Aula de Angular 8 com Bootstrap</h1>
-    <h2>TO-DO List</h2>
-</div>
-
-<ul class="list-group">
-    <li *ngFor="let item of items" class="list-group-item">
-        {{item}} | 
-        <button (click)="removeTarefa(item)" class="btn btn-danger">Remover</button>
-    </li>
-</ul>
-
-<hr>
-
-<div class="formgroup">
-    <label for="">Nome da Tarefa</label>
-    <input type="text" [(ngModel)]="tarefa" class="form-control" >
-</div>
-
-    <button (click)="addTarefa()" class="btn btn-primary">Adicionar</button>
-
+<div class="container jumbotron">
+    <app-edit></app-edit>
+    
+    <app-list></app-list>
+    
 </div>
