@@ -13,6 +13,7 @@ export class FuncionarioComponent implements OnInit {
 
   constructor(private _funcionarioService: FuncionarioService) { }
   public funcionarios: Funcionarios[];
+  
 
   ngOnInit() {
     this._funcionarioService.getFuncionarios()
