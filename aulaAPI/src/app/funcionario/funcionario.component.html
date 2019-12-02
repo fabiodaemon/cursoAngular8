@@ -3,15 +3,15 @@
           <tr>
             <td>id</td>
             <td>nome</td>
-            <td>departmanto</td>
+            <td>departamento</td>
           </tr>
         </thead>
       
         <tbody>
-          <tr **ngFor="let funcionario of funcionarios">
+          <tr *ngFor="let funcionario of funcionarios">
             <td>{{funcionario.id}}</td>
             <td>{{funcionario.nome}}</td>
-            <td>{{funcionario.departmanto}}</td>
+            <td>{{funcionario.departamento}}</td>
           </tr>
         </tbody>
       </table>
